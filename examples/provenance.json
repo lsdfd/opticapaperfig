@@ -1,0 +1,9 @@
+{
+  "data_kind": "synthetic analytic example; NOT research evidence",
+  "array_sha256_before": "c2357a4fbd9d24ea3e973579b8969d87bb933c1722b11e1e72094012490321d3",
+  "array_sha256_after": "c2357a4fbd9d24ea3e973579b8969d87bb933c1722b11e1e72094012490321d3",
+  "geometry_pass": true,
+  "same_six_panels": true,
+  "plotted_sha256_before": "3639c65fdfd71481307c7f9745bc8b99d924984f70b2c90a2715fab653125718",
+  "plotted_sha256_after": "3639c65fdfd71481307c7f9745bc8b99d924984f70b2c90a2715fab653125718"
+}

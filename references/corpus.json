@@ -1,0 +1,752 @@
+{
+  "access_date": "2026-10-31",
+  "research_papers": 16,
+  "numbered_research_figures": 51,
+  "counting": "One numbered figure counts once, regardless of number of subpanels. Not all figures in every article were inspected.",
+  "limits": [
+    "Purposive, availability-biased sample; not a statistical survey of all leading optics journals.",
+    "Optica sample includes older foundational papers; no claim of comprehensive 2026 Optica coverage.",
+    "Several publisher images are 685 px wide: layout and color roles inspected, exact font metrics not inferred.",
+    "A selected CC BY 4.0 reference gallery is distributed with attribution; other images are source links only."
+  ],
+  "papers": [
+    {
+      "key": "N01",
+      "title": "360° structured light with learned metasurfaces",
+      "journal": "Nature Photonics",
+      "year": 2024,
+      "online_date": "2024/06/11",
+      "article_type": "original research",
+      "url": "https://www.nature.com/articles/s41566-024-01450-x",
+      "doi": "10.1038/s41566-024-01450-x",
+      "topic": "3D结构光、学习型超表面",
+      "figures": [
+        {
+          "number": 1,
+          "url": "https://www.nature.com/articles/s41566-024-01450-x/figures/1",
+          "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41566-024-01450-x/MediaObjects/41566_2024_1450_Fig1_HTML.png",
+          "inspected_pixels": [
+            2163,
+            997
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 2,
+          "url": "https://www.nature.com/articles/s41566-024-01450-x/figures/2",
+          "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41566-024-01450-x/MediaObjects/41566_2024_1450_Fig2_HTML.png",
+          "inspected_pixels": [
+            2173,
+            2101
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 4,
+          "url": "https://www.nature.com/articles/s41566-024-01450-x/figures/4",
+          "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41566-024-01450-x/MediaObjects/41566_2024_1450_Fig4_HTML.png",
+          "inspected_pixels": [
+            2167,
+            2016
+          ],
+          "inspection": "Image viewed, not caption-only"
+        }
+      ],
+      "observed": "F1黑背景表现投射场景；F2横向优化流程带前后向箭头，下方单元、光谱、SEM、实景；F4照片/光路/定量曲线与多场景成像按行组装。",
+      "inference": "黑底概念图与白底证据图可共存；图面要区分空间结构和优化流。"
+    },
+    {
+      "key": "N02",
+      "title": "Metasurface-enabled single-shot and complete Mueller matrix imaging",
+      "journal": "Nature Photonics",
+      "year": 2024,
+      "online_date": "2024/05/02",
+      "article_type": "original research",
+      "url": "https://www.nature.com/articles/s41566-024-01426-x",
+      "doi": "10.1038/s41566-024-01426-x",
+      "topic": "偏振、Mueller矩阵成像",
+      "figures": [
+        {
+          "number": 1,
+          "url": "https://www.nature.com/articles/s41566-024-01426-x/figures/1",
+          "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41566-024-01426-x/MediaObjects/41566_2024_1426_Fig1_HTML.png",
+          "inspected_pixels": [
+            1503,
+            1015
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 2,
+          "url": "https://www.nature.com/articles/s41566-024-01426-x/figures/2",
+          "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41566-024-01426-x/MediaObjects/41566_2024_1426_Fig2_HTML.png",
+          "inspected_pixels": [
+            2165,
+            1591
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 5,
+          "url": "https://www.nature.com/articles/s41566-024-01426-x/figures/5",
+          "image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41566-024-01426-x/MediaObjects/41566_2024_1426_Fig5_HTML.png",
+          "inspected_pixels": [
+            1820,
+            917
+          ],
+          "inspection": "Image viewed, not caption-only"
+        }
+      ],
+      "observed": "F1用绿光、浅蓝器件、粉色检测区解释角色；F2以矩阵空间和算子排布组织密集内容；F5照片、测量拼图、Stokes条带和4×4矩阵分组。",
+      "inference": "矩阵按数学索引排布；颜色服务概念角色。F5带符号矩阵并非都采用零中心发散色，这不作为推荐。"
+    },
+    {
+      "key": "N03",
+      "title": "Expanding momentum bandgaps in photonic time crystals through resonances",
+      "journal": "Nature Photonics",
+      "year": 2025,
+      "online_date": "2024/11/12",
+      "article_type": "original research",
+      "url": "https://www.nature.com/articles/s41566-024-01563-3",
+      "doi": "10.1038/s41566-024-01563-3",
+      "topic": "时间晶体、色散与带隙",
+      "figures": [
+        {
+          "number": 1,
+          "url": "https://www.nature.com/articles/s41566-024-01563-3/figures/1",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41566-024-01563-3/MediaObjects/41566_2024_1563_Fig1_HTML.png",
+          "inspected_pixels": [
+            685,
+            550
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 2,
+          "url": "https://www.nature.com/articles/s41566-024-01563-3/figures/2",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41566-024-01563-3/MediaObjects/41566_2024_1563_Fig2_HTML.png",
+          "inspected_pixels": [
+            685,
+            314
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 5,
+          "url": "https://www.nature.com/articles/s41566-024-01563-3/figures/5",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41566-024-01563-3/MediaObjects/41566_2024_1563_Fig5_HTML.png",
+          "inspected_pixels": [
+            685,
+            190
+          ],
+          "inspection": "Image viewed, not caption-only"
+        }
+      ],
+      "observed": "F1的2×2曲线共享坐标，灰带与箭头标带隙；F2两列机制对比；F5左机制、右热图/局部/散点，嵌套分组。",
+      "inference": "物理区域阴影有解释作用；双轴和红绿组合需检查歧义，不照搬。"
+    },
+    {
+      "key": "N04",
+      "title": "Plasmonic biosensor enabled by resonant quantum tunnelling",
+      "journal": "Nature Photonics",
+      "year": 2025,
+      "online_date": "2025/06/26",
+      "article_type": "original research",
+      "url": "https://www.nature.com/articles/s41566-025-01708-y",
+      "doi": "10.1038/s41566-025-01708-y",
+      "topic": "等离激元传感、多尺度表征",
+      "figures": [
+        {
+          "number": 1,
+          "url": "https://www.nature.com/articles/s41566-025-01708-y/figures/1",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41566-025-01708-y/MediaObjects/41566_2025_1708_Fig1_HTML.png",
+          "inspected_pixels": [
+            685,
+            312
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 2,
+          "url": "https://www.nature.com/articles/s41566-025-01708-y/figures/2",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41566-025-01708-y/MediaObjects/41566_2025_1708_Fig2_HTML.png",
+          "inspected_pixels": [
+            685,
+            699
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 4,
+          "url": "https://www.nature.com/articles/s41566-025-01708-y/figures/4",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41566-025-01708-y/MediaObjects/41566_2025_1708_Fig4_HTML.png",
+          "inspected_pixels": [
+            685,
+            595
+          ],
+          "inspection": "Image viewed, not caption-only"
+        }
+      ],
+      "observed": "F1上方机制，下方照片到SEM/TEM逐级放大，框线串联；F2发光图与SEM同列对应；F4左右两类分析，ROI色与谱线对应，最后给误差和检出限。",
+      "inference": "显微证据串联尺度；把定量校准接在代表图像之后，保留噪声。"
+    },
+    {
+      "key": "N05",
+      "title": "Generation of continuous-wave 1–11 THz radiation with intersubband polaritonic metasurfaces",
+      "journal": "Nature Photonics",
+      "year": 2026,
+      "online_date": "2026/04/16",
+      "article_type": "original research",
+      "url": "https://www.nature.com/articles/s41566-026-01889-0",
+      "doi": "10.1038/s41566-026-01889-0",
+      "topic": "太赫兹产生、器件与光谱",
+      "figures": [
+        {
+          "number": 1,
+          "url": "https://www.nature.com/articles/s41566-026-01889-0/figures/1",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41566-026-01889-0/MediaObjects/41566_2026_1889_Fig1_HTML.png",
+          "inspected_pixels": [
+            685,
+            456
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 2,
+          "url": "https://www.nature.com/articles/s41566-026-01889-0/figures/2",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41566-026-01889-0/MediaObjects/41566_2026_1889_Fig2_HTML.png",
+          "inspected_pixels": [
+            685,
+            168
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 4,
+          "url": "https://www.nature.com/articles/s41566-026-01889-0/figures/4",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41566-026-01889-0/MediaObjects/41566_2026_1889_Fig4_HTML.png",
+          "inspected_pixels": [
+            685,
+            353
+          ],
+          "inspection": "Image viewed, not caption-only"
+        }
+      ],
+      "observed": "F1单幅光路渲染；F2器件、能带、响应横排；F4为2×3实验证据，包含SEM、光谱、功率关系、效率、光斑和吸收谱。",
+      "inference": "不同角色可以同组但不强行共色条；多曲线用线型并记录倍率。"
+    },
+    {
+      "key": "N06",
+      "title": "Ultra-robust informational metasurfaces based on spatial coherence structures engineering",
+      "journal": "Light: Science & Applications",
+      "year": 2024,
+      "online_date": "2024/06/04",
+      "article_type": "original research",
+      "url": "https://www.nature.com/articles/s41377-024-01485-3",
+      "doi": "10.1038/s41377-024-01485-3",
+      "topic": "相干结构、鲁棒全息",
+      "figures": [
+        {
+          "number": 1,
+          "url": "https://www.nature.com/articles/s41377-024-01485-3/figures/1",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-024-01485-3/MediaObjects/41377_2024_1485_Fig1_HTML.png",
+          "inspected_pixels": [
+            685,
+            393
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 2,
+          "url": "https://www.nature.com/articles/s41377-024-01485-3/figures/2",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-024-01485-3/MediaObjects/41377_2024_1485_Fig2_HTML.png",
+          "inspected_pixels": [
+            685,
+            754
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 5,
+          "url": "https://www.nature.com/articles/s41377-024-01485-3/figures/5",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-024-01485-3/MediaObjects/41377_2024_1485_Fig5_HTML.png",
+          "inspected_pixels": [
+            685,
+            480
+          ],
+          "inspection": "Image viewed, not caption-only"
+        }
+      ],
+      "observed": "F1黑底机制表达障碍前后光场；F2转换流程后接强度/相位图；F5按遮挡条件排图，图标标明遮挡范围。",
+      "inference": "按条件构成证据矩阵；彩虹相位图可改循环色，不把发表样式当最优。"
+    },
+    {
+      "key": "N07",
+      "title": "Broadband infrared imaging governed by guided-mode resonance in dielectric metasurfaces",
+      "journal": "Light: Science & Applications",
+      "year": 2024,
+      "online_date": "2024/09/10",
+      "article_type": "original research",
+      "url": "https://www.nature.com/articles/s41377-024-01535-w",
+      "doi": "10.1038/s41377-024-01535-w",
+      "topic": "非线性红外成像、导模共振",
+      "figures": [
+        {
+          "number": 1,
+          "url": "https://www.nature.com/articles/s41377-024-01535-w/figures/1",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-024-01535-w/MediaObjects/41377_2024_1535_Fig1_HTML.png",
+          "inspected_pixels": [
+            685,
+            329
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 2,
+          "url": "https://www.nature.com/articles/s41377-024-01535-w/figures/2",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-024-01535-w/MediaObjects/41377_2024_1535_Fig2_HTML.png",
+          "inspected_pixels": [
+            685,
+            718
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 8,
+          "url": "https://www.nature.com/articles/s41377-024-01535-w/figures/8",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-024-01535-w/MediaObjects/41377_2024_1535_Fig8_HTML.png",
+          "inspected_pixels": [
+            685,
+            763
+          ],
+          "inspection": "Image viewed, not caption-only"
+        }
+      ],
+      "observed": "F1结构及SEM在左、能带在右；F2宽谱上方，分解谱与对应场图下方；F8明场照片、逐层图像和层位曲线对应。",
+      "inference": "色条必须区分不同场分量；密集谱线用线型；层深/尺度标签必须明确。"
+    },
+    {
+      "key": "N09",
+      "title": "Shape optimization for high efficiency metasurfaces: theory and implementation",
+      "journal": "Light: Science & Applications",
+      "year": 2024,
+      "online_date": "2024/10/29",
+      "article_type": "original research",
+      "url": "https://www.nature.com/articles/s41377-024-01629-5",
+      "doi": "10.1038/s41377-024-01629-5",
+      "topic": "形状优化、偏振效率",
+      "figures": [
+        {
+          "number": 1,
+          "url": "https://www.nature.com/articles/s41377-024-01629-5/figures/1",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-024-01629-5/MediaObjects/41377_2024_1629_Fig1_HTML.png",
+          "inspected_pixels": [
+            685,
+            194
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 2,
+          "url": "https://www.nature.com/articles/s41377-024-01629-5/figures/2",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-024-01629-5/MediaObjects/41377_2024_1629_Fig2_HTML.png",
+          "inspected_pixels": [
+            685,
+            254
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 8,
+          "url": "https://www.nature.com/articles/s41377-024-01629-5/figures/8",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-024-01629-5/MediaObjects/41377_2024_1629_Fig8_HTML.png",
+          "inspected_pixels": [
+            685,
+            259
+          ],
+          "inspection": "Image viewed, not caption-only"
+        }
+      ],
+      "observed": "F1三列黑白结构对比；F2紧凑闭环优化流程；F8仿真、实验、提升三列，蓝橙表示TE/TM，实虚线区分方案/来源。",
+      "inference": "一张图只用少量颜色也能承载多维语义；形状示意无需重3D。"
+    },
+    {
+      "key": "N10",
+      "title": "Minimalist optical system for achromatic imaging within extended field of view based on monolithic integrated meta-axicon cluster",
+      "journal": "Light: Science & Applications",
+      "year": 2026,
+      "online_date": "2026/04/16",
+      "article_type": "original research",
+      "url": "https://www.nature.com/articles/s41377-026-02272-y",
+      "doi": "10.1038/s41377-026-02272-y",
+      "topic": "消色差成像、轴锥与视场",
+      "figures": [
+        {
+          "number": 1,
+          "url": "https://www.nature.com/articles/s41377-026-02272-y/figures/1",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-026-02272-y/MediaObjects/41377_2026_2272_Fig1_HTML.png",
+          "inspected_pixels": [
+            685,
+            383
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 2,
+          "url": "https://www.nature.com/articles/s41377-026-02272-y/figures/2",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-026-02272-y/MediaObjects/41377_2026_2272_Fig2_HTML.png",
+          "inspected_pixels": [
+            685,
+            237
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 7,
+          "url": "https://www.nature.com/articles/s41377-026-02272-y/figures/7",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41377-026-02272-y/MediaObjects/41377_2026_2272_Fig7_HTML.png",
+          "inspected_pixels": [
+            685,
+            530
+          ],
+          "inspection": "Image viewed, not caption-only"
+        }
+      ],
+      "observed": "F1 RGB射线与传播图、响应曲线；F2角度曲线紧邻通道光斑；F7同位置ROI和剖面形成对照，方法按上下排列。",
+      "inference": "物理RGB应保留，并以通道标签辅助；ROI-剖面必须对应。"
+    },
+    {
+      "key": "N11",
+      "title": "Metasurface-enabled broadband multidimensional photodetectors",
+      "journal": "Nature Communications",
+      "year": 2024,
+      "online_date": "2024/09/27",
+      "article_type": "original research",
+      "url": "https://www.nature.com/articles/s41467-024-52632-8",
+      "doi": "10.1038/s41467-024-52632-8",
+      "topic": "多维探测、偏振与机器学习",
+      "figures": [
+        {
+          "number": 1,
+          "url": "https://www.nature.com/articles/s41467-024-52632-8/figures/1",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-024-52632-8/MediaObjects/41467_2024_52632_Fig1_HTML.png",
+          "inspected_pixels": [
+            685,
+            652
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 2,
+          "url": "https://www.nature.com/articles/s41467-024-52632-8/figures/2",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-024-52632-8/MediaObjects/41467_2024_52632_Fig2_HTML.png",
+          "inspected_pixels": [
+            685,
+            418
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 5,
+          "url": "https://www.nature.com/articles/s41467-024-52632-8/figures/5",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-024-52632-8/MediaObjects/41467_2024_52632_Fig5_HTML.png",
+          "inspected_pixels": [
+            685,
+            509
+          ],
+          "inspection": "Image viewed, not caption-only"
+        }
+      ],
+      "observed": "F1按概念层、器件层、学习流程分三条带；F2器件、流线场、参数热图和拟合；F5响应曲线与网络、混淆矩阵、区间预测分组。",
+      "inference": "模块结构与定量输出分工；密度较高，缩图时需警惕小字及图例。"
+    },
+    {
+      "key": "N12",
+      "title": "Full-colour 3D holographic augmented-reality displays with metasurface waveguides",
+      "journal": "Nature",
+      "year": 2024,
+      "online_date": "2024/05/08",
+      "article_type": "original research",
+      "url": "https://www.nature.com/articles/s41586-024-07386-0",
+      "doi": "10.1038/s41586-024-07386-0",
+      "topic": "全彩AR、超表面波导",
+      "figures": [
+        {
+          "number": 1,
+          "url": "https://www.nature.com/articles/s41586-024-07386-0/figures/1",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41586-024-07386-0/MediaObjects/41586_2024_7386_Fig1_HTML.png",
+          "inspected_pixels": [
+            685,
+            366
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 2,
+          "url": "https://www.nature.com/articles/s41586-024-07386-0/figures/2",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41586-024-07386-0/MediaObjects/41586_2024_7386_Fig2_HTML.png",
+          "inspected_pixels": [
+            685,
+            574
+          ],
+          "inspection": "Image viewed, not caption-only"
+        },
+        {
+          "number": 4,
+          "url": "https://www.nature.com/articles/s41586-024-07386-0/figures/4",
+          "image_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41586-024-07386-0/MediaObjects/41586_2024_7386_Fig4_HTML.png",
+          "inspected_pixels": [
+            685,
+            565
+          ],
+          "inspection": "Image viewed, not caption-only"
+        }
+      ],
+      "observed": "F1传统/新结构并列并给实体照片；F2光路-场图-结构/SEM-效率；F4行=方法、列=场景，统一ROI框，另给不同焦距结果。",
+      "inference": "等条件矩阵比随意拼照片更利于判断方法差异。"
+    },
+    {
+      "key": "O02",
+      "title": "Structuring light waves in 3D volumes with high precision using communication mode optics",
+      "year": 2025,
+      "doi": "10.1364/OPTICA.559264",
+      "url": "https://pure.tue.nl/ws/portalfiles/portal/367405705/optica-12-9-1502.pdf",
+      "journal": "Optica",
+      "article_type": "original research",
+      "topic": "三维光场、通信模态",
+      "figures": [
+        {
+          "number": 1,
+          "pdf_page_1based": 4,
+          "inspection": "PDF page rendered locally and visually viewed"
+        },
+        {
+          "number": 3,
+          "pdf_page_1based": 7,
+          "inspection": "PDF page rendered locally and visually viewed"
+        },
+        {
+          "number": 4,
+          "pdf_page_1based": 8,
+          "inspection": "PDF page rendered locally and visually viewed"
+        },
+        {
+          "number": 5,
+          "pdf_page_1based": 10,
+          "inspection": "PDF page rendered locally and visually viewed"
+        }
+      ],
+      "observed": "F1分格定义几何与算子；F3目标、系数、场、编码和光路按证据链排布；F4按Target/Simulated/Measured列对比；F5多层结果保持固定行列。",
+      "inference": "原版包含较重分隔线，可学语义对齐而不照搬边框。图注明确模拟/实测空间比例不一致，应保留这一限制。"
+    },
+    {
+      "key": "O07",
+      "title": "Computational complex optical field imaging using a designed metasurface diffuser",
+      "year": 2018,
+      "doi": "10.1364/OPTICA.5.000924",
+      "url": "https://authors.library.caltech.edu/records/bhh5g-xxv45",
+      "journal": "Optica",
+      "article_type": "original research",
+      "topic": "计算复场成像",
+      "figures": [
+        {
+          "number": 1,
+          "pdf_page_1based": 2,
+          "inspection": "PDF page rendered locally and visually viewed"
+        },
+        {
+          "number": 2,
+          "pdf_page_1based": 2,
+          "inspection": "PDF page rendered locally and visually viewed"
+        },
+        {
+          "number": 3,
+          "pdf_page_1based": 4,
+          "inspection": "PDF page rendered locally and visually viewed"
+        },
+        {
+          "number": 6,
+          "pdf_page_1based": 6,
+          "inspection": "PDF page rendered locally and visually viewed"
+        }
+      ],
+      "observed": "F1光学到计算到幅度/相位；F2侧视/顶视/单元、映射、实物/SEM；F3按目标/无迭代/有迭代分组；F6计算与传统成像左右对照。",
+      "inference": "幅度与相位有独立色条；旧式彩色虚线框可换为留白与简短组标题。"
+    },
+    {
+      "key": "O08",
+      "title": "Controlling the sign of chromatic dispersion in diffractive optics with dielectric metasurfaces",
+      "year": 2017,
+      "doi": "10.1364/OPTICA.4.000625",
+      "url": "https://authors.library.caltech.edu/records/nnf8v-92988",
+      "journal": "Optica",
+      "article_type": "original research",
+      "topic": "色散、消色差聚焦",
+      "figures": [
+        {
+          "number": 1,
+          "pdf_page_1based": 2,
+          "inspection": "PDF page rendered locally and visually viewed"
+        },
+        {
+          "number": 2,
+          "pdf_page_1based": 3,
+          "inspection": "PDF page rendered locally and visually viewed"
+        },
+        {
+          "number": 5,
+          "pdf_page_1based": 6,
+          "inspection": "PDF page rendered locally and visually viewed"
+        }
+      ],
+      "observed": "F1五列色散机制、两行元件类型；F2机制与定量预测组合；F5仿真/实测曲线在上，传播图/焦斑/线剖面在下，以波长匹配行。",
+      "inference": "二维对比矩阵能解释多种色散；小inset和密集标注不能当固定模板。"
+    },
+    {
+      "key": "O09",
+      "title": "Multifunctional 2.5D metastructures enabled by adjoint optimization",
+      "year": 2020,
+      "doi": "10.1364/OPTICA.374787",
+      "url": "https://authors.library.caltech.edu/records/jxqdh-gnr74",
+      "journal": "Optica",
+      "article_type": "original research",
+      "topic": "多层超表面、伴随优化",
+      "figures": [
+        {
+          "number": 1,
+          "pdf_page_1based": 2,
+          "inspection": "PDF page rendered locally and visually viewed"
+        },
+        {
+          "number": 2,
+          "pdf_page_1based": 3,
+          "inspection": "PDF page rendered locally and visually viewed"
+        },
+        {
+          "number": 6,
+          "pdf_page_1based": 6,
+          "inspection": "PDF page rendered locally and visually viewed"
+        }
+      ],
+      "observed": "F1少量射线与局部层结构；F2单元、两张参数映射和两层版图；F6 SEM逐级放大、实验光路、正交焦场和剖面完整闭环。",
+      "inference": "材料层、波长和测量/理想曲线分别编码；伪彩SEM需注明。"
+    },
+    {
+      "key": "O10",
+      "title": "Ultralow-light-level color image reconstruction using high-efficiency plasmonic metasurface mosaic filters",
+      "year": 2020,
+      "doi": "10.1364/OPTICA.389905",
+      "url": "https://eprints.gla.ac.uk/216252/",
+      "journal": "Optica",
+      "article_type": "original research",
+      "topic": "低光成像、RGB滤波",
+      "figures": [
+        {
+          "number": 1,
+          "pdf_page_1based": 2,
+          "inspection": "PDF page rendered locally and visually viewed"
+        },
+        {
+          "number": 2,
+          "pdf_page_1based": 3,
+          "inspection": "PDF page rendered locally and visually viewed"
+        },
+        {
+          "number": 11,
+          "pdf_page_1based": 6,
+          "inspection": "PDF page rendered locally and visually viewed"
+        },
+        {
+          "number": 12,
+          "pdf_page_1based": 6,
+          "inspection": "PDF page rendered locally and visually viewed"
+        }
+      ],
+      "observed": "F1黑底功能渲染与白底单元剖面结合；F2 RGB SEM与对应谱线按列；F11固定目标按曝光排序并给每像素光子数；F12多目标应用。",
+      "inference": "把弱光退化和采集条件同时展示，比仅挑清晰效果图更有信息。"
+    }
+  ],
+  "extra_commentary": {
+    "key": "N08",
+    "title": "Quasicrystal metasurface for optical holography and diffraction",
+    "url": "https://www.nature.com/articles/s41377-024-01578-z",
+    "type": "News & Views",
+    "viewed_figures": [
+      1
+    ],
+    "counted_in_research": false
+  },
+  "discovery_only": [
+    {
+      "url": "https://www7.zzu.edu.cn/diamond/info/1089/2469.htm",
+      "role": "University repost attributed to 超构表面学习之路; used as a discovery lead, not visual evidence or official rules."
+    }
+  ],
+  "not_visually_counted": [
+    "Optica Electric-field-resolved near-infrared microscopy: fetched text via web, local PDF access failed; screenshot return did not expose viewable image.",
+    "Optica 2017 Recent advances in planar optics review: not counted; PDF access restricted."
+  ],
+  "extra_graphical_abstracts": [
+    {
+      "id": "G01",
+      "title": "Superchiral Light Emerging from Bound States in the Continuum in Metasurfaces of Si Nanorod Dimers",
+      "authors": [
+        "Jose Luis Pura",
+        "Beatriz Castillo López de Larrinzar",
+        "Minpeng Liang",
+        "Antonio García-Martín",
+        "Jaime Gómez Rivas",
+        "José A. Sánchez-Gil"
+      ],
+      "year": 2024,
+      "journal": "ACS Photonics",
+      "figure": "Graphical / TOC abstract",
+      "source": "https://pure.tue.nl/ws/portalfiles/portal/343330501/pura-et-al-2024-superchiral-light-emerging-from-bound-states-in-the-continuum-in-metasurfaces-of-si-nanorod-dimers.pdf",
+      "doi": "10.1021/acsphotonics.4c00938",
+      "license": "CC BY 4.0",
+      "changes": "Original embedded image extracted from PDF page 2 (repository cover counted); artwork unchanged."
+    },
+    {
+      "id": "G02",
+      "title": "Multiple Multicolored 3D Polarization Knots Arranged along Light Propagation",
+      "authors": [
+        "Yan Li",
+        "Muhammad Afnan Ansari",
+        "Hammad Ahmed",
+        "Ruoxing Wang",
+        "Guanchao Wang",
+        "Qunxing Yu",
+        "Chunmei Zhang",
+        "Shuqi Chen",
+        "Xianzhong Chen"
+      ],
+      "year": 2024,
+      "journal": "ACS Photonics",
+      "figure": "Graphical / TOC abstract",
+      "source": "https://pure.hw.ac.uk/ws/portalfiles/portal/141750188/li-et-al-2024-multiple-multicolored-3d-polarization-knots-arranged-along-light-propagation.pdf",
+      "doi": "10.1021/acsphotonics.4c01341",
+      "license": "CC BY 4.0",
+      "changes": "Original embedded image extracted from PDF page 2 (repository cover counted); artwork unchanged."
+    },
+    {
+      "id": "G03",
+      "title": "Metasurface-enabled three-in-one nanoprints by multifunctional manipulations of light",
+      "authors": [
+        "Zile Li",
+        "Liangui Deng",
+        "Juan Deng",
+        "Zhixue He",
+        "Jin Tao",
+        "Guoxing Zheng",
+        "Shaohua Yu"
+      ],
+      "year": 2021,
+      "journal": "iScience",
+      "figure": "Graphical / TOC abstract",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8669004/",
+      "doi": "10.1016/j.isci.2021.103510",
+      "license": "CC BY 4.0",
+      "changes": "Original PMC graphical-abstract image; artwork unchanged."
+    }
+  ]
+}

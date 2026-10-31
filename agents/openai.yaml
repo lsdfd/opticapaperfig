@@ -1,0 +1,4 @@
+interface:
+  display_name: Optica Paper Figure
+  short_description: 统一光学论文视觉风格，按论点设计组图与图文摘要，保持数据不变
+  default_prompt: 使用 $opticapaperfig 美化我的论文图，保持数据和归一化不变，统一全篇字体、色调与制图风格，按各张图的论点设计布局并检查全文叙事。

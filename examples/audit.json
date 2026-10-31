@@ -1,0 +1,27 @@
+{
+  "status": "STATIC_CHECKS_PASS",
+  "limitations": "Scientific meaning, hidden/clipped content, font editability in every editor, contrast and overlap are NOT automatically verified.",
+  "pages": [
+    {
+      "page": 1,
+      "width_mm": 178.0,
+      "height_mm": 130.0,
+      "fonts": [
+        "Arial-BoldMT",
+        "ArialMT"
+      ],
+      "min_font_pt": 6.5,
+      "image_dpi": [
+        450.0,
+        450.0,
+        450.0,
+        450.0,
+        450.0,
+        450.0,
+        450.0,
+        450.0
+      ]
+    }
+  ],
+  "issues": []
+}
