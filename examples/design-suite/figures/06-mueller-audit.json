@@ -1,16 +1,16 @@
 {
-  "status": "STATIC_CHECKS_PASS",
+  "status": "REVIEW_REQUIRED",
   "limitations": "Scientific meaning, hidden/clipped content, font editability in every editor, contrast and overlap are NOT automatically verified.",
   "pages": [
     {
       "page": 1,
       "width_mm": 178.0,
-      "height_mm": 163.0,
+      "height_mm": 150.0,
       "fonts": [
-        "Arial-BoldMT",
+        "Arial-ItalicMT",
         "ArialMT"
       ],
-      "min_font_pt": 6.5,
+      "min_font_pt": 5.6,
       "image_dpi": [
         360.0,
         360.0,
@@ -32,5 +32,55 @@
       ]
     }
   ],
-  "issues": []
+  "issues": [
+    {
+      "page": 1,
+      "kind": "small_text",
+      "size_pt": 5.6,
+      "text": "0"
+    },
+    {
+      "page": 1,
+      "kind": "small_text",
+      "size_pt": 5.6,
+      "text": "0"
+    },
+    {
+      "page": 1,
+      "kind": "small_text",
+      "size_pt": 5.6,
+      "text": "1"
+    },
+    {
+      "page": 1,
+      "kind": "small_text",
+      "size_pt": 5.6,
+      "text": "2"
+    },
+    {
+      "page": 1,
+      "kind": "small_text",
+      "size_pt": 5.6,
+      "text": "3"
+    },
+    {
+      "page": 1,
+      "kind": "small_text",
+      "size_pt": 5.6,
+      "text": "1"
+    },
+    {
+      "page": 1,
+      "kind": "small_text",
+      "size_pt": 5.6,
+      "text": "2"
+    },
+    {
+      "page": 1,
+      "kind": "small_text",
+      "size_pt": 5.6,
+      "text": "3"
+    }
+  ],
+  "typographic_exception": "Eight 5.6 pt Stokes indices attached to 8 pt S labels. Visually reviewed at the final size; other small text is not exempt."
 }

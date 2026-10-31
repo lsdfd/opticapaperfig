@@ -18,7 +18,7 @@ description: >-
 2. **关系成为构图。** 因果沿路径展开，对照用同尺度并置，层级用远近和大小，分组用留白。先决定眼睛怎么走，再摆图。
 3. **颜色承担角色。** 基底与辅助元素克制，关键光束/通道突出；同一物理对象全篇同色。照片保留本色，强度、正负场、相位分别选色图。
 4. **全文统一，逐图有别。** 字体、色彩含义和制图风格贯穿全文；每张大图按自己的论点选择构图，前后连成叙事。同类比较整齐重复，不同任务不硬套同一网格。
-5. **细节说同一种语言。** 一套字族、字号层级、线重、箭头、视角与材质。文字短而清晰，线条纤细但不弱；缩到最终尺寸仍精致可读。
+5. **细节说同一种语言。** 一套字族、字号层级、线重、箭头、视角与材质。图内短标注、图外完整图注；变量斜体、单位正体，不套展示页大标题与页脚。缩到最终尺寸仍清晰。
 
 ## 实际怎么改
 
@@ -38,7 +38,7 @@ description: >-
 ## 按需参考
 
 - [精选原图与审美拆解](references/gallery.md)：本地图片、原文入口、值得学与不照搬的部分；[图片署名](references/THIRD_PARTY.md)。
-- [全文图序、统一性与差异性](references/paper-narrative.md)；[字体、线条、配色、留白](references/design-system.md)；[组图配方](references/panel-recipes.md)；[核心图](references/hero-figure.md)。
+- [全文图序、统一性与差异性](references/paper-narrative.md)；[字体、单位与图注](references/typography.md)；[视觉参数](references/design-system.md)；[组图配方](references/panel-recipes.md)；[核心图](references/hero-figure.md)。
 - [光学语义](references/optics-semantics.md)；[期刊规格](references/journal-profiles.md)；[代码与验收](references/implementation-qa.md)。
 - [逐篇观察](references/evidence-atlas.md)、[来源清单](references/corpus.json)：实际看过的证据。已发表做法不是官方要求，建议数值不是截图测量。
 

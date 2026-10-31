@@ -10,6 +10,7 @@
 - [14张精选参考原图](references/gallery.md)：直接看图，附逐图审美拆解；另有5篇Optica的指定图页入口。
 - [全文统一与逐图差异](references/paper-narrative.md)：统一什么、变化什么，如何安排文章图序。
 - [核心概念图与图文摘要](references/hero-figure.md)：把整篇贡献变成一个可记住的物理场景。
+- [字体、变量、单位与图注](references/typography.md)：区分图内短标注和图外完整图注，避免展示页式排版。
 - [字体、色调、线条和留白参数](references/design-system.md)：明确可落地的细节，而非只谈理念。
 
 ## 调研依据
@@ -20,17 +21,7 @@
 
 14张离线图片均核查为CC BY 4.0并逐图署名。其余论文保留原文入口，不把“能下载”当作“可任意转载”。建议参数与期刊官方要求分开；不能从截图猜出精确字体或线宽。
 
-## 同样六个面板的改图示例
-
-| 基础输出 | 视觉优化 |
-|---|---|
-| ![基础输出](examples/before.png) | ![视觉优化](examples/after.png) |
-
-这是明确标注的**合成数据演示**。面板数量、数据、掩膜、坐标范围与归一化保持一致；只调整视觉表达。脚本核对原始数组和实际绘图对象中的值、范围与坐标哈希。示例用于验证工作流，不代表研究结果，也不是要求所有图都排成2×3。
-
-[矢量PDF](examples/after.pdf) · [可编辑SVG](examples/after.svg) · [一致性记录](examples/provenance.json) · [有限PDF检查](examples/audit.json)
-
-## 六组新的前后对照
+## 六组同数据前后对照
 
 [查看完整示例册](examples/design-suite/README.md)：核心机制、参数设计、光谱、光场对照、成像与剖面、Mueller矩阵。统一字体和颜色角色，按不同论点设计版式；均为合成练习，前后数据与科学含义不变。
 
@@ -49,9 +40,9 @@
 已有Python/MATLAB/R/矢量工作流优先；脚本是可选工具，不强制迁移语言。
 
 ```bash
-# Python示例依赖：numpy、matplotlib；PDF检查另需pymupdf
-python scripts/demo_optics.py --out-dir demo-output
-python scripts/audit_pdf.py demo-output/after.pdf --width-mm 178
+# 依赖见 examples/design-suite/requirements.txt
+python examples/design-suite/scripts/render_suite.py
+python examples/design-suite/scripts/build_gallery.py
 ```
 
 保留原始数据、误差、弱信号与失败区域，不用生成式图像冒充SEM或实验结果。自动检查不能替代科学判断和实际看图；投稿规格需核查目标期刊当时的要求。

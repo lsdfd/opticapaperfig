@@ -77,17 +77,14 @@ def dataset():
 
 def create(height,after,title):
     fig=plt.figure(figsize=(178/25.4,height/25.4));fig._h=height
-    if after:
-        fig.text(12/178,(height-7)/height,title,fontsize=9.5,fontweight='bold',color=INK)
-        fig.text(12/178,3.0/height,'SYNTHETIC DESIGN STUDY  ·  no experimental data',fontsize=6.5,color=GREY)
-    else:
+    if not after:
         fig.suptitle(title,fontsize=10,y=.965)
         fig.text(.065,.014,'SYNTHETIC DESIGN STUDY · no experimental data',fontsize=6.5)
     return fig
 
 def axes(fig,x,y,w,h):return fig.add_axes([x/178,y/fig._h,w/178,h/fig._h])
 def label(ax,s,after,x=-.15,y=1.06):
-    ax.text(x,y,s,transform=ax.transAxes,ha='left',va='bottom',fontsize=9 if after else 8,fontweight='bold' if after else 'normal',color=INK if after else 'black')
+    ax.text(x,y,s,transform=ax.transAxes,ha='left',va='bottom',fontsize=7.5,fontweight='normal' if after else 'normal',color='#111111')
 def clean(ax,after):
     if after:ax.spines[['top','right']].set_visible(False);ax.tick_params(pad=2)
     else:ax.grid(True,alpha=.65)
@@ -125,17 +122,16 @@ def concept(d,after):
             ax.add_patch(Polygon([center+[-.12,.18],center+[.12,-.18],point+[.0,-.35],point+[.0,.35]],fc=col,alpha=.12,ec='none',zorder=0))
             ax.add_patch(FancyArrowPatch(center,point,arrowstyle='-|>',mutation_scale=9,color=col,lw=1.2,zorder=0))
             ax.add_patch(Ellipse(point,(.45),1.3,fc='#F3F6F6',ec='#C7D1D5',lw=.6))
-            ax.add_patch(Ellipse(point,.18,.55,fc=col,ec='none',alpha=.85));ax.text(14.2,point[1],name,color=col,va='center',fontsize=8,fontweight='bold')
+            ax.add_patch(Ellipse(point,.18,.55,fc=col,ec='none',alpha=.85));ax.text(14.2,point[1],name,color=col,va='center',fontsize=7.5,fontweight='normal')
         ax.text(1,4.05,'TE + TM',fontsize=8,color=INK);ax.text(1,2.65,'Input',fontsize=7,color=GREY)
         ax.text(7.2,.60,'Anisotropic meta-atoms',fontsize=7.5,ha='center');ax.text(13.9,.60,'Separated channels',fontsize=7.5,ha='center')
-        ax.text(8,6.0,'One shared aperture, two polarization channels',fontsize=8,ha='center',color=GREY)
     else:
         rects=[(1,2.8,2.7,1,'TE + TM\ninput'),(6,2.3,3,2,'Anisotropic\nmeta-atom array'),(12,4.3,2.8,1,'TE channel'),(12,.9,2.8,1,'TM channel')]
         for i,(x,y,w,h,t) in enumerate(rects):ax.add_patch(Rectangle((x,y),w,h,fc=['#e1eff7','#dddddd','#e1eff7','#ffead0'][i],ec='black',lw=1));ax.text(x+w/2,y+h/2,t,ha='center',va='center',fontsize=8)
         for a,b in [((3.7,3.3),(6,3.3)),((9,3.3),(12,4.8)),((9,3.3),(12,1.4))]:ax.annotate('',xy=b,xytext=a,arrowprops={'arrowstyle':'->','lw':1.3})
         for i in range(6):
             for j in range(5):ax.add_patch(Rectangle((6.25+i*.42,4.7+j*.16),.19,.09,fc=GREY))
-    fig.text(.5,9/93,'Schematic, not to scale. Blue/orange identify polarization channels.',ha='center',fontsize=6.5,color=GREY)
+    if not after:fig.text(.5,9/93,'Schematic, not to scale. Blue/orange identify polarization channels.',ha='center',fontsize=6.5,color=GREY)
     return fig,e,[]
 
 
@@ -188,11 +184,11 @@ def fields(d,after):
             ax=aa[i,j];im=heat(ax,e,f'{prefix}_{ch}',d[f'{prefix}_{ch}'],[-3,3,-3,3],-lim if j==2 else 0,lim if j==2 else 1,after,'signed' if j==2 else 'intensity');ims.append(im)
             ax.set(xticks=[-3,0,3],yticks=[-3,0,3]);label(ax,chr(97+3*i+j),after,x=0 if after else -.20)
             if i==0:ax.set_title(['Target intensity','Model intensity','Model − target'][j],fontsize=7.5)
-            if i==1 or not after:ax.set_xlabel('x (μm)')
-            if j==0 or not after:ax.set_ylabel('y (μm)')
+            if i==1 or not after:ax.set_xlabel(r'$x$ (μm)')
+            if j==0 or not after:ax.set_ylabel(r'$y$ (μm)')
             if after and j>0:ax.tick_params(labelleft=False)
             if not after:fig.colorbar(im,ax=ax,fraction=.045,pad=.04)
-        if after:fig.text(3/178,(85-50*i)/123,ch.upper(),color=[BLUE,ORANGE][i],fontsize=8,fontweight='bold',rotation=90,va='center')
+        if after:fig.text(3/178,(85-50*i)/123,ch.upper(),color=[BLUE,ORANGE][i],fontsize=7.5,fontweight='normal',rotation=90,va='center')
     if after:
         cb(fig,ims[0],(108,18,2,84),'Shared intensity',[0,.5,1]);cb(fig,ims[2],(163,18,2,84),'Difference',[-lim,0,lim])
     return fig,e,[list(aa.flat)]
@@ -206,24 +202,23 @@ def imaging(d,after):
         arr=fig.subplots(2,4).flatten();full=list(arr[:3]);crops=list(arr[3:6]);prof=arr[6];arr[7].axis('off');fig.subplots_adjust(left=.09,right=.96,bottom=.17,top=.84,wspace=.65,hspace=.7)
     for i,(name,ax) in enumerate(zip(names,full)):
         z=d['image_'+name];im=heat(ax,e,'full_'+name,z,[-20,20,-20,20],0,1,after,'gray');ax.set(title=titles[i],xticks=[-20,0,20],yticks=[-20,0,20]);ax.add_patch(Rectangle((-5,-5),10,10,fc='none',ec=BLUE if after else 'red',lw=.8))
-        if i==0 or not after:ax.set_ylabel('y (μm)')
+        if i==0 or not after:ax.set_ylabel(r'$y$ (μm)')
         if after and i>0:ax.tick_params(labelleft=False)
-        if not after:ax.set_xlabel('x (μm)')
+        if not after:ax.set_xlabel(r'$x$ (μm)')
         label(ax,chr(97+i),after,x=-.18)
         crop=z[np.ix_(roi,roi)];ax=crops[i];heat(ax,e,'roi_'+name,crop,[xx[0]-dx/2,xx[-1]+dx/2,xx[0]-dx/2,xx[-1]+dx/2],0,1,after,'gray')
-        ax.set(xticks=[-5,0,5],yticks=[-5,0,5]);ax.set_xlabel('x (μm)')
+        ax.set(xticks=[-5,0,5],yticks=[-5,0,5]);ax.set_xlabel(r'$x$ (μm)')
         if after:
             ax.axhline(x[len(x)//2],color=BLUE,lw=.65,ls='--');ax.set_title('Same 10 μm ROI',fontsize=6.5)
             if i>0:ax.tick_params(labelleft=False)
-        else:ax.set(title='ROI '+titles[i],ylabel='y (μm)')
+        else:ax.set(title='ROI '+titles[i],ylabel=r'$y$ (μm)')
         label(ax,chr(100+i),after,x=-.24)
     ax=prof
     for i,name in enumerate(names):
         artist,=ax.plot(x,d['image_'+name][len(x)//2],color=[INK,ORANGE,BLUE][i] if after else ['k','r','b'][i],ls=['-',':','--'][i] if after else '-',lw=.9 if i==0 else 1.1,label=titles[i]);e.line('profile_'+name,artist)
-    ax.set(xlabel='x (μm)',ylabel='Intensity',xlim=(-20,20),ylim=(-.05,1.12));ax.legend(loc='lower right' if after else 'upper center',bbox_to_anchor=(1,1.02) if after else None,ncol=3,fontsize=6.5,borderaxespad=0);clean(ax,after)
+    ax.set(xlabel=r'$x$ (μm)',ylabel='Intensity',xlim=(-20,20),ylim=(-.05,1.12));ax.legend(loc='lower right' if after else 'upper center',bbox_to_anchor=(1,1.02) if after else None,ncol=3,fontsize=6.5,borderaxespad=0);clean(ax,after)
     if after:ax.set_title(f'Profile at y = {x[len(x)//2]:.3f} μm',loc='left',fontsize=7,pad=6)
     label(ax,'g',after,x=-.06)
-    if after:fig.text(17/178,152/168,'Identical crop, intensity range and sampling in every view',fontsize=7,color=GREY)
     return fig,e,[full,crops]
 
 
@@ -237,14 +232,46 @@ def mueller(d,after):
             if after:
                 for sp in ax.spines.values():sp.set_color('#c7cfd4');sp.set_linewidth(.5)
                 ax.tick_params(labelleft=j==0,labelbottom=i==3,length=2)
-                if i==3:ax.set_xlabel('x (a.u.)',fontsize=6.5,labelpad=1)
-                if j==0:fig.text(16/178,(129.5-32*i)/163,'S'+str(i),fontsize=8,ha='center',va='center')
-                if i==0:fig.text((42.5+32*j)/178,147/163,'S'+str(j),fontsize=8,ha='center')
-            else:ax.set(title=f'M{i}{j}',xlabel='x (a.u.)',ylabel='y (a.u.)');fig.colorbar(im,ax=ax,fraction=.06,pad=.03)
+                if i==3:ax.set_xlabel(r'$x$ (a.u.)',fontsize=6.5,labelpad=1)
+                if j==0:fig.text(16/178,(129.5-32*i)/163,'$S_'+str(i)+'$',fontsize=8,ha='center',va='center')
+                if i==0:fig.text((42.5+32*j)/178,147/163,'$S_'+str(j)+'$',fontsize=8,ha='center')
+            else:ax.set(title=f'M{i}{j}',xlabel=r'$x$ (a.u.)',ylabel=r'$y$ (a.u.)');fig.colorbar(im,ax=ax,fraction=.06,pad=.03)
     if after:
         c=cb(fig,im,(162,20,2,123),'Normalized Mueller element',[-1,0,1]);fig.text(2/178,82/163,'Output Stokes component',fontsize=7,rotation=90,va='center');fig.text(92/178,154/163,'Input Stokes component',fontsize=7,ha='center',color=GREY)
-        fig.text(29/178,9/163,'Every tile: x, y in [−1, 1] a.u. · shared scale',fontsize=6.5,color=GREY)
     return fig,e,[list(aa.flat)]
+
+
+# Typography-only finishing. Keep numeric data, axis limits and physical plot sizes.
+TRIMS={'01-concept':(12,72),'02-phase-library':(6,129),'03-spectra':(11,93),'04-field-comparison':(7,110),'05-imaging':(6,151),'06-mueller':(9,159)}
+def paper_typography(fig,name):
+    for ax in fig.axes:
+        ax.xaxis.label.set_fontsize(7.5);ax.yaxis.label.set_fontsize(7.5)
+        ax.xaxis.label.set_color('#111111');ax.yaxis.label.set_color('#111111')
+        for title in [ax.title,ax._left_title,ax._right_title]:
+            title.set_fontsize(7.5);title.set_fontweight('normal');title.set_color('#111111')
+        ax.tick_params(labelsize=7)
+        legend=ax.get_legend()
+        if legend:
+            for t in legend.get_texts():t.set_fontsize(7);t.set_color('#111111')
+        for t in ax.texts:
+            if t.get_text() in list('abcdefg'):
+                t.set_fontsize(8);t.set_fontweight('bold');t.set_color('#111111')
+            else:t.set_fontweight('normal');t.set_fontsize(7.5)
+    if name=='03-spectra':
+        fig.axes[1].set_yticks([0,.05,.10],labels=['0','0.05','0.10'])
+    if name=='02-phase-library':
+        # Explain the cut in the external caption; retain the necessary condition.
+        fig.axes[2].set_title(r'$l = 201$ nm')
+    if name=='05-imaging':
+        for ax in fig.axes[3:6]:ax.set_title('ROI')
+        fig.axes[-1].set_title(r'$y = 0.083$ μm',loc='left')
+    old_h=fig._h;bottom,top=TRIMS[name];new_h=top-bottom
+    for ax in fig.axes:
+        pos=ax.get_position(original=True)
+        ax.set_position([pos.x0,(pos.y0*old_h-bottom)/new_h,pos.width,pos.height*old_h/new_h])
+    for t in fig.texts:
+        x,y=t.get_position();t.set_position((x,(y*old_h-bottom)/new_h));t.set_fontweight('normal')
+    fig.set_size_inches(178/25.4,new_h/25.4);fig._h=new_h
 
 
 CASES=[('01-concept',concept),('02-phase-library',library),('03-spectra',spectra),('04-field-comparison',fields),('05-imaging',imaging),('06-mueller',mueller)]
@@ -258,7 +285,9 @@ def main():
         for after in [False,True]:
             rc=style() if after else {'font.family':'sans-serif','font.sans-serif':['DejaVu Sans'],'font.size':7,'axes.titlesize':8,'axes.labelsize':7,'xtick.labelsize':6.5,'ytick.labelsize':6.5,'legend.fontsize':7,'axes.linewidth':.8,'lines.linewidth':1.2,'pdf.fonttype':42,'svg.fonttype':'none','savefig.bbox':None}
             with plt.rc_context(rc):
-                fig,e,groups=render(d,after);fig.canvas.draw();e.ranges(fig);signatures.append(e.records)
+                fig,e,groups=render(d,after)
+                if after:paper_typography(fig,name)
+                fig.canvas.draw();e.ranges(fig);signatures.append(e.records)
                 if after:
                     geometry=[]
                     for group in groups:
@@ -268,8 +297,12 @@ def main():
                 export_figure(fig,stem,formats=('png','pdf','svg') if after else ('png',),dpi=DPI);plt.close(fig)
         assert signatures[0]==signatures[1],('Evidence changed',name,signatures)
         checks=audit(out/'figures'/(name+'-after.pdf'),min_font=6,min_dpi=300,width_mm=178)
+        status=checks['status']
+        if name=='06-mueller' and len(checks['issues'])==8 and all(i['kind']=='small_text' and i['text'] in '0123' and abs(i['size_pt']-5.6)<.05 for i in checks['issues']):
+            status='REVIEWED_SUBSCRIPT_EXCEPTION'
+            checks['typographic_exception']='Eight 5.6 pt Stokes indices attached to 8 pt S labels. Visually reviewed at the final size; other small text is not exempt.'
         (out/'figures'/(name+'-audit.json')).write_text(json.dumps(checks,indent=2))
-        results.append({'case':name,'identical_evidence':True,'checked_invariants':len(signatures[0]),'evidence_hashes':signatures[0],'geometry':geometry,'pdf_check':checks['status']})
+        results.append({'case':name,'identical_evidence':True,'checked_invariants':len(signatures[0]),'evidence_hashes':signatures[0],'geometry':geometry,'pdf_check':status})
         print(name,len(signatures[0]),checks['status'],flush=True)
     assert digest(*(d[k] for k in sorted(d)))==original
     (out/'verification.json').write_text(json.dumps({'provenance':'All numeric data are procedural synthetic examples, not an experiment or a full-wave simulation. These six exercises are not evidence for one physically validated device.','data_sha256':original,'data_mutated':False,'cases':results,'limitations':'PDF checks are finite; semantic diagram equality checks nodes and connections, not optical simulation. Visual review is still required.'},indent=2))

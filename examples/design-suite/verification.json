@@ -75,8 +75,8 @@
       },
       "geometry": [
         {
-          "width_spread_pt": 2.842170943040401e-14,
-          "height_spread_pt": 5.684341886080802e-14,
+          "width_spread_pt": 7.105427357601002e-14,
+          "height_spread_pt": 1.4210854715202004e-14,
           "pass": true
         }
       ],
@@ -107,7 +107,7 @@
       "geometry": [
         {
           "width_spread_pt": 5.684341886080802e-14,
-          "height_spread_pt": 9.947598300641403e-14,
+          "height_spread_pt": 5.684341886080802e-14,
           "pass": true
         },
         {
@@ -158,12 +158,12 @@
       },
       "geometry": [
         {
-          "width_spread_pt": 4.263256414560601e-14,
-          "height_spread_pt": 4.263256414560601e-14,
+          "width_spread_pt": 8.526512829121202e-14,
+          "height_spread_pt": 7.105427357601002e-14,
           "pass": true
         }
       ],
-      "pdf_check": "STATIC_CHECKS_PASS"
+      "pdf_check": "REVIEWED_SUBSCRIPT_EXCEPTION"
     }
   ],
   "limitations": "PDF checks are finite; semantic diagram equality checks nodes and connections, not optical simulation. Visual review is still required."

@@ -9,8 +9,8 @@ from cycler import cycler
 
 COLORS = ['#0072B2', '#D55E00', '#009E73', '#CC79A7', '#666666']
 
-def style(profile='optica-draft', font=None):
-    if profile not in ('optica-draft', 'nature-production'):
+def style(profile='optica-paper', font=None):
+    if profile not in ('optica-draft', 'optica-paper', 'nature-production'):
         raise ValueError('Unknown profile')
     if font is None:
         for candidate in ('Arial', 'Helvetica', 'DejaVu Sans'):
@@ -23,11 +23,13 @@ def style(profile='optica-draft', font=None):
     else:
         font_manager.findfont(font, fallback_to_default=False)
     nature = profile == 'nature-production'
+    paper = profile == 'optica-paper'
     return {
         'font.family': 'sans-serif', 'font.sans-serif': [font],
-        'font.size': 7 if nature else 8,
-        'axes.labelsize': 7 if nature else 8,
-        'axes.titlesize': 7 if nature else 8,
+        'font.size': 7 if nature else 7.5 if paper else 8,
+        'font.weight': 'normal', 'axes.labelweight': 'normal', 'axes.titleweight': 'normal',
+        'axes.labelsize': 7 if nature else 7.5 if paper else 8,
+        'axes.titlesize': 7 if nature else 7.5 if paper else 8,
         'xtick.labelsize': 6 if nature else 7,
         'ytick.labelsize': 6 if nature else 7,
         'legend.fontsize': 6 if nature else 7,
@@ -37,10 +39,13 @@ def style(profile='optica-draft', font=None):
         'ytick.major.size': 3, 'xtick.direction': 'out',
         'ytick.direction': 'out', 'axes.grid': False,
         'legend.frameon': False, 'axes.prop_cycle': cycler(color=COLORS),
-        'text.color': '#222222', 'axes.labelcolor': '#222222',
+        'text.color': '#111111', 'axes.labelcolor': '#111111',
+        'xtick.color': '#111111', 'ytick.color': '#111111',
         'figure.facecolor': 'white', 'savefig.facecolor': 'white',
         'pdf.fonttype': 42, 'ps.fonttype': 42, 'svg.fonttype': 'none',
-        'mathtext.fontset': 'dejavusans', 'savefig.bbox': None,
+        'mathtext.fontset': 'custom', 'mathtext.rm': font,
+        'mathtext.it': font + ':italic', 'mathtext.bf': font + ':bold',
+        'mathtext.fallback': 'stixsans', 'savefig.bbox': None,
     }
 
 def figure_mm(width=85, height=65, **kwargs):
@@ -49,9 +54,9 @@ def figure_mm(width=85, height=65, **kwargs):
     kwargs.setdefault('layout', 'constrained')
     return plt.subplots(figsize=(width / 25.4, height / 25.4), **kwargs)
 
-def panel_label(ax, label, profile='optica-draft', x=-.18, y=1.04):
+def panel_label(ax, label, profile='optica-paper', x=-.18, y=1.04):
     return ax.text(x, y, label, transform=ax.transAxes, ha='left', va='bottom',
-                   fontsize=8 if profile == 'nature-production' else 9,
+                   fontsize=9 if profile == 'optica-draft' else 8,
                    fontweight='bold', color='#222222', clip_on=False)
 
 def field_scale(kind, *, vmin=None, vmax=None, period=2*np.pi, start=-np.pi):

@@ -5,12 +5,13 @@
     {
       "page": 1,
       "width_mm": 178.0,
-      "height_mm": 123.0,
+      "height_mm": 103.0,
       "fonts": [
         "Arial-BoldMT",
+        "Arial-ItalicMT",
         "ArialMT"
       ],
-      "min_font_pt": 6.5,
+      "min_font_pt": 7.0,
       "image_dpi": [
         360.0,
         360.0,

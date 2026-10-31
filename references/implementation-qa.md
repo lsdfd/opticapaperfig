@@ -20,7 +20,7 @@
 ```python
 import matplotlib.pyplot as plt
 from optica_style import style, figure_mm, export_figure, panel_label
-with plt.rc_context(style('optica-draft')):
+with plt.rc_context(style('optica-paper')):
     fig, ax = figure_mm(85, 65)
     ax.plot(x, y, label='Measurement')  # x,y来自真实数据
     ax.set(xlabel='Wavelength (nm)', ylabel='Transmission')

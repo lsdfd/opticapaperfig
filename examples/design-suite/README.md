@@ -1,6 +1,6 @@
 # 六组同数据前后对照
 
-统一视觉语言，按不同论点改变版式。全部是合成练习；基础版和优化版使用相同数据、面板与科学含义。它们不构成真实器件的完整验证。
+统一视觉语言，按不同论点改变版式。全部是合成练习；基础版和优化版使用相同数据、面板与科学含义。它们不构成真实器件的完整验证。图内排版已修订：取消展示页标题和页脚，数学变量与单位分开处理，完整图注置于图外。
 
 ![六组优化结果](overview.png)
 
@@ -16,6 +16,8 @@
 
 从方框连接改为共享孔径的斜视结构；输入与两个输出沿清楚的方向展开。蓝/橙仅表示TE/TM通道，器件本身退为低饱和材料色。
 
+Fig. 1. Schematic of polarization routing through an anisotropic meta-atom array. TE and TM inputs share an aperture and are directed to separate output channels. Blue and orange identify polarization channels, not wavelength. The diagram is illustrative and not to scale.
+
 保留输入、30个各向异性单元、两个输出及全部连接关系。图形位置与视角改变；这是示意图，不是电磁仿真。
 
 [PDF](figures/01-concept-after.pdf) · [SVG](figures/01-concept-after.svg) · [PNG](figures/01-concept-after.png)
@@ -29,6 +31,8 @@
 | ![优化前](figures/02-phase-library-before.png) | ![优化后](figures/02-phase-library-after.png) |
 
 把并排挤压的三个面板改成上方双图、下方宽剖面；相位采用完整周期的循环色图，共用色条，剖面线在主图中可定位。
+
+Fig. 2. Synthetic phase-response library. (a,b) Analytic TE and TM phase responses as functions of meta-atom width and length. Both maps use the same phase range. (c) Cross-sections at a length of 201 nm, indicated by dashed lines in (a,b). These are analytic examples, not electromagnetic simulation results.
 
 相位来自解析函数；图上截面为Length = 201 nm。所有取样值、坐标范围、色阶范围与剖面数组均保持不变。
 
@@ -44,6 +48,8 @@
 
 用不等宽布局明确主次；蓝/橙贯穿三个面板，实线/虚线和圆点/方点提供冗余编码。去掉重网格与图例边框，给主曲线留出面积。
 
+Fig. 3. Synthetic spectral response. (a) Channel efficiencies from an analytic model (lines) and synthetic samples (symbols). (b) Fraction of incident power routed to the opposite channel. (c) Deflection angles. Blue and orange denote TE and TM, respectively. All data are synthetic.
+
 曲线为解析模型，散点为固定随机种子的合成采样；不是实测。效率、泄漏与角度显示范围前后一致。
 
 [PDF](figures/03-spectra-after.pdf) · [SVG](figures/03-spectra-after.svg) · [PNG](figures/03-spectra-after.png)
@@ -57,6 +63,8 @@
 | ![优化前](figures/04-field-comparison-before.png) | ![优化后](figures/04-field-comparison-after.png) |
 
 六个图块保留相同物理尺寸；非负强度用顺序色，正负差值用零中心发散色。两根共享色条明确比较基准，重复标注减到必要程度。
+
+Fig. 4. Comparison of synthetic target and model intensity distributions. Rows correspond to TE and TM; columns show the target, model and signed difference (model minus target). All intensity maps share one reference and range; they are not normalized separately. Both difference maps use the same symmetric scale.
 
 二维高斯目标与轻微偏移模型均为合成数组；无逐图归一化。残差范围覆盖全部值，坐标方向与像素范围不变。
 
@@ -72,6 +80,8 @@
 
 将七个散排面板组织成三列对应链，底部剖面横贯整行。图像保留灰度，蓝色框只定位ROI；图例移出曲线区域。
 
+Fig. 5. Synthetic image-detail comparison. (a–c) A procedural resolution target and two precomputed blurred images. (d–f) The same 10 μm region of interest, marked in (a–c). (g) Intensity profiles at y = 0.083 μm. Crops, intensity ranges and sampling are identical across conditions; all images are synthetic.
+
 分辨率靶为程序生成，Blur A/B是已生成的两种模糊图。优化阶段不重做滤波或去噪；ROI和显示范围相同，剖面位于y = 0.083 μm。
 
 [PDF](figures/05-imaging-after.pdf) · [SVG](figures/05-imaging-after.svg) · [PNG](figures/05-imaging-after.png)
@@ -85,6 +95,8 @@
 | ![优化前](figures/06-mueller-before.png) | ![优化后](figures/06-mueller-after.png) |
 
 去掉16根重复色条，保留一个固定范围的零中心色条；行列标示输入/输出Stokes分量，只在外边显示坐标。重复结构服务比较，不为变化强行换版式。
+
+Fig. 6. Synthetic normalized Mueller matrix for a spatially varying ideal retarder. Rows and columns index output and input Stokes components, respectively. Every tile spans x, y = −1 to 1 in arbitrary spatial units and shares the same −1 to 1 colour scale. The 3 × 3 polarization block is an orthogonal Stokes-space rotation; these are analytic data, not measurements.
 
 使用解析的归一化无损延迟器Mueller矩阵：M00 = 1，3×3子块为Stokes空间旋转，已验证正交性。不是偏振测量数据。
 
