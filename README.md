@@ -30,6 +30,14 @@
 
 [矢量PDF](examples/after.pdf) · [可编辑SVG](examples/after.svg) · [一致性记录](examples/provenance.json) · [有限PDF检查](examples/audit.json)
 
+## 六组新的前后对照
+
+[查看完整示例册](examples/design-suite/README.md)：核心机制、参数设计、光谱、光场对照、成像与剖面、Mueller矩阵。统一字体和颜色角色，按不同论点设计版式；均为合成练习，前后数据与科学含义不变。
+
+![六组示例概览](examples/design-suite/overview.png)
+
+[六页对照PDF](examples/design-suite/comparisons.pdf) · [可切换前后的HTML](examples/design-suite/index.html)（下载后本地打开） · [绘图源码](examples/design-suite/scripts/render_suite.py)
+
 ## 使用
 
 将本仓库放入你的 Codex skills 目录，目录名为 `opticapaperfig`；使用已配置的 `$CODEX_HOME/skills`，未配置时通常是 `~/.codex/skills`。

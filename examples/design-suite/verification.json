@@ -1,0 +1,170 @@
+{
+  "provenance": "All numeric data are procedural synthetic examples, not an experiment or a full-wave simulation. These six exercises are not evidence for one physically validated device.",
+  "data_sha256": "47724a58ba83395e9a0c5c8cb84ccbdf808da2685f4f23268ea26607e8c33181",
+  "data_mutated": false,
+  "cases": [
+    {
+      "case": "01-concept",
+      "identical_evidence": true,
+      "checked_invariants": 1,
+      "evidence_hashes": {
+        "concept": "0217389b880fed32574b0ce617c7fc44eac998551707f1ccf95b9b6af9a73f8a"
+      },
+      "geometry": [],
+      "pdf_check": "STATIC_CHECKS_PASS"
+    },
+    {
+      "case": "02-phase-library",
+      "identical_evidence": true,
+      "checked_invariants": 7,
+      "evidence_hashes": {
+        "phase_0": "ab3fcb8aa964cd02f887c35d568478db1e78f2b521eefe1dadc768600a24ca6d",
+        "phase_1": "2162fad3595eb45f9646b5058fee99509ec112887299382499d86fb1be287a4b",
+        "cut_phi_te": "dbf6a853a616983c9ecba5f5d5fd392a1083c4b232f8be77576f650409841931",
+        "cut_phi_tm": "9c0d8a0f9967b8ef0f34524df89f25f83be0f081a00ba5baacb8d61664308bba",
+        "axes-range:phase_0": "aea8bfca619b96cd9b78ed09e55e331cb5b0bb0c966f5a56017a0f12d9b759fe",
+        "axes-range:phase_1": "aea8bfca619b96cd9b78ed09e55e331cb5b0bb0c966f5a56017a0f12d9b759fe",
+        "axes-range:cut_phi_te,cut_phi_tm": "ef0a5edaab051bab63d73021b3c6a0e68eb9fd69aae94063a5f5a75a84573617"
+      },
+      "geometry": [
+        {
+          "width_spread_pt": 0.0,
+          "height_spread_pt": 0.0,
+          "pass": true
+        }
+      ],
+      "pdf_check": "STATIC_CHECKS_PASS"
+    },
+    {
+      "case": "03-spectra",
+      "identical_evidence": true,
+      "checked_invariants": 11,
+      "evidence_hashes": {
+        "eta_te": "7eefb7c528e5b784546840904c4e90d5c7b848e8087d35fc7b46f9c44bb58877",
+        "sample_te": "10c16ea25274eee0ae01d0105af62204ff162737552aceb7b405f610156f08a4",
+        "eta_tm": "a1e26529e4d90a29c2652c6ab1f11a9073c12d58a10e4edca7847691c5f3f03f",
+        "sample_tm": "338161aeef7158bcc817a96a3a14b94ec9f11bab0fb3a6fb64188099b19f417e",
+        "cross_te": "e7747eec134cdb93ee8a1b460aba8136bf65990b3f7f339b93c5dac2edbf58ce",
+        "cross_tm": "751e5c106ef0c71c69e6b93d343158ac775770bf603f8e28af4f5aa890388eff",
+        "angle_te": "614ea41a49df7b3173d70700a62ea234839e206d57e306e3c1ea813929414c45",
+        "angle_tm": "5dcd8cedabb578a43ae5fe7cea6072177972f82ab7b7c5983052e2bb3e553c2c",
+        "axes-range:eta_te,eta_tm,sample_te,sample_tm": "2ed5ac531d8c076ba3338774eaa495877b024fc9e5a3e117215e5389962acc90",
+        "axes-range:cross_te,cross_tm": "8b27766078de7d9c199da3514fa94c9fc7a103e17e4ff7d752030210355383ca",
+        "axes-range:angle_te,angle_tm": "fe27e305fc043b2980dc9c8779ad3a1b7e5ed378f2a8972bd6d165255648a855"
+      },
+      "geometry": [],
+      "pdf_check": "STATIC_CHECKS_PASS"
+    },
+    {
+      "case": "04-field-comparison",
+      "identical_evidence": true,
+      "checked_invariants": 12,
+      "evidence_hashes": {
+        "field_te": "245a50edbb5b2422b0ef5b3eff5f73379d76c9a2f664e151ffc6b7fa59842f43",
+        "model_te": "2bd114ac68a3a9f77132fd2eeaa9dda10f2089b85c0a5ddb5f92e92cb657b00c",
+        "residual_te": "c08d43e8a50f9760a7f430782713a316d6da95efa2fb830c54b91b3e857a9ff0",
+        "field_tm": "7cb9c349d2e1f26aa8c6074311205d209cff986291c961743e006a98aa93a178",
+        "model_tm": "a8de4268fe57ba00f3d14cbcee671dff85a5fecea713ae665e03aab11ce26f35",
+        "residual_tm": "adee181678484910da6252a18a876fcff348835dd6ca0d3ec9b142e141704bf6",
+        "axes-range:field_te": "a7d3296f84f1682d8b848800dc6dfee567e9ea2a395de21df67a52c2e526cf5a",
+        "axes-range:model_te": "a7d3296f84f1682d8b848800dc6dfee567e9ea2a395de21df67a52c2e526cf5a",
+        "axes-range:residual_te": "a7d3296f84f1682d8b848800dc6dfee567e9ea2a395de21df67a52c2e526cf5a",
+        "axes-range:field_tm": "a7d3296f84f1682d8b848800dc6dfee567e9ea2a395de21df67a52c2e526cf5a",
+        "axes-range:model_tm": "a7d3296f84f1682d8b848800dc6dfee567e9ea2a395de21df67a52c2e526cf5a",
+        "axes-range:residual_tm": "a7d3296f84f1682d8b848800dc6dfee567e9ea2a395de21df67a52c2e526cf5a"
+      },
+      "geometry": [
+        {
+          "width_spread_pt": 2.842170943040401e-14,
+          "height_spread_pt": 5.684341886080802e-14,
+          "pass": true
+        }
+      ],
+      "pdf_check": "STATIC_CHECKS_PASS"
+    },
+    {
+      "case": "05-imaging",
+      "identical_evidence": true,
+      "checked_invariants": 16,
+      "evidence_hashes": {
+        "full_reference": "486520457e00eaa3732831ba998f7130d5da36f4953dacb1415f03a0911e9100",
+        "roi_reference": "eafa80b872acd7de431920be42c66845711f2c010a3ee684a00fabc1f4570802",
+        "full_a": "539855edf700331a4d17c565e204cd3469ee51c41b34b345b7a60000776015bb",
+        "roi_a": "7ba69345501769465b1e0a662a9cec514244149465dd3223b2e5750945c71371",
+        "full_b": "d65320f299b89f2cd638bb050877bf4801f4fdc86103f9d2363d04537c09d6c2",
+        "roi_b": "ae94ce1132bb1a2f39b9aa22191e59c8eaf330444d984b64066515d65d9213c1",
+        "profile_reference": "5e99dadc79f68e41ae41624f3894a9b1a7ecb5374aae6785c8e62b054288e702",
+        "profile_a": "fd169d76dc3ad6949b1cd27832468fa1e325510e4ee0f6cdaf467bfbc35cb0e7",
+        "profile_b": "39dbb625b27a8ac24a79986a8fc5c4d4f51efedd65aad6b5654d8ee0a33bc29b",
+        "axes-range:full_reference": "88ec3cf122da70875d95afba924ff6f1fc374860864988ed28094d537497c867",
+        "axes-range:full_a": "88ec3cf122da70875d95afba924ff6f1fc374860864988ed28094d537497c867",
+        "axes-range:full_b": "88ec3cf122da70875d95afba924ff6f1fc374860864988ed28094d537497c867",
+        "axes-range:roi_reference": "49bc3e9aa6078a50e719c35c969553b4662bab2b7833eb49090cee6fd90f96df",
+        "axes-range:roi_a": "49bc3e9aa6078a50e719c35c969553b4662bab2b7833eb49090cee6fd90f96df",
+        "axes-range:roi_b": "49bc3e9aa6078a50e719c35c969553b4662bab2b7833eb49090cee6fd90f96df",
+        "axes-range:profile_a,profile_b,profile_reference": "76525d94e184a0e9fb910c6366142ec24da184251e77910ff5f974e1cf3caf14"
+      },
+      "geometry": [
+        {
+          "width_spread_pt": 5.684341886080802e-14,
+          "height_spread_pt": 9.947598300641403e-14,
+          "pass": true
+        },
+        {
+          "width_spread_pt": 4.263256414560601e-14,
+          "height_spread_pt": 0.0,
+          "pass": true
+        }
+      ],
+      "pdf_check": "STATIC_CHECKS_PASS"
+    },
+    {
+      "case": "06-mueller",
+      "identical_evidence": true,
+      "checked_invariants": 32,
+      "evidence_hashes": {
+        "M00": "b9d3df7b62053749e4168570d6844b382d1012e76f37c81ea4e3e02d16845803",
+        "M01": "a5d47016e4d8a371c25074e3df03925d10529e39a96b8cad435012c0938aaee4",
+        "M02": "a5d47016e4d8a371c25074e3df03925d10529e39a96b8cad435012c0938aaee4",
+        "M03": "a5d47016e4d8a371c25074e3df03925d10529e39a96b8cad435012c0938aaee4",
+        "M10": "a5d47016e4d8a371c25074e3df03925d10529e39a96b8cad435012c0938aaee4",
+        "M11": "22d4eca6fc1b4f18eb911edf4d789a0ca665ccf4663b78dc5b29b2c67dd882a5",
+        "M12": "b5dc965fe34b6cb9601d4c8ceb008d8e960528c77bab76b036df731704ce9319",
+        "M13": "e15eeed8111ba53bbe55f577fae92c06812f5fd902e9392259f923ead8f3c2a4",
+        "M20": "a5d47016e4d8a371c25074e3df03925d10529e39a96b8cad435012c0938aaee4",
+        "M21": "a1c450fee453609a87c575b0a6ec8594be41b8a71ccdb2c83e04f59e4f23def9",
+        "M22": "3c74ce7f36ddd4ccd007f4acd091b9212f23376f88f5925869fd84f848b68b3f",
+        "M23": "d5ead3a11fdb6a2fdab8ae9eb92bc387a9ee7f4637258fa847fc12d9a3478e4e",
+        "M30": "a5d47016e4d8a371c25074e3df03925d10529e39a96b8cad435012c0938aaee4",
+        "M31": "b4ceedb4178095c9b71c80606217ff9410026c78d1c8004f47e083dd9e246cc1",
+        "M32": "b33daee63c680ab36f14e40902e20bd69c5ac3bc64338421861062da5383b745",
+        "M33": "131df1c04621beb930343d7bc9911296ac379cb8dc271cae3ec9470638b8a7a8",
+        "axes-range:M00": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M01": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M02": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M03": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M10": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M11": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M12": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M13": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M20": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M21": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M22": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M23": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M30": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M31": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M32": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c",
+        "axes-range:M33": "99debf87d5e67442a18800f5ede1444dbd8cf8c823f8dc29d339aa2dc7ed9d2c"
+      },
+      "geometry": [
+        {
+          "width_spread_pt": 4.263256414560601e-14,
+          "height_spread_pt": 4.263256414560601e-14,
+          "pass": true
+        }
+      ],
+      "pdf_check": "STATIC_CHECKS_PASS"
+    }
+  ],
+  "limitations": "PDF checks are finite; semantic diagram equality checks nodes and connections, not optical simulation. Visual review is still required."
+}
