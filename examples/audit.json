@@ -8,9 +8,10 @@
       "height_mm": 130.0,
       "fonts": [
         "Arial-BoldMT",
+        "Arial-ItalicMT",
         "ArialMT"
       ],
-      "min_font_pt": 6.5,
+      "min_font_pt": 7.0,
       "image_dpi": [
         450.0,
         450.0,

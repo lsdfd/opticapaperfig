@@ -22,7 +22,7 @@ description: >-
 
 ## 实际怎么改
 
-先看现有图与代码；多张图先按[全文图序](references/paper-narrative.md)明确各自论点与衔接，再读[视觉参数](references/design-system.md)，再从[精选原图](references/gallery.md)看2–4张匹配参考，提取“构图关系＋色彩角色＋细节语言”，不要照抄内容。光学定义有疑问时查[语义检查](references/optics-semantics.md)。
+先看现有图与代码；多张图先按[全文图序](references/paper-narrative.md)明确各自论点与衔接。绘图前读[字体、单位与图注](references/typography.md)和[视觉参数](references/design-system.md)，再从[精选原图](references/gallery.md)看2–4张匹配参考，提取“构图关系＋色彩角色＋细节语言”，不要照抄内容。光学定义有疑问时查[语义检查](references/optics-semantics.md)。
 列明准备改的色调、布局、字体、线条、叙事五项，随后直接修改获授权的绘图层。优先用现有面板重排、调整面积与视觉编码；不为套模板新增数据或结果面板。只有用户要求补充分析或新图时，才做可追溯的派生展示。
 沿用已有Python/MATLAB/R/矢量流程，保留before，按最终尺寸渲染after。先看缩略图主次，再逐项看字、轴、色条、比例尺、对齐与遮挡；不能只检查代码不看画面。[接入与验收](references/implementation-qa.md)含导出工具。
 

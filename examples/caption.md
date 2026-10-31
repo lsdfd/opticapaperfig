@@ -1,0 +1,1 @@
+Synthetic analytic example; not experimental evidence. (a,b) Target and perturbed intensity on a shared reference. (c) Signed intensity difference. (d) Profiles at y = 0. (e) TE and TM efficiencies. (f) Independent phase example; centre masked. Spatial axes in μm.

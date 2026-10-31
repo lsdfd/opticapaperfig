@@ -37,6 +37,8 @@ with plt.rc_context(style('optica-paper')):
 **几何层**：渲染后检查实际绘图区；同组宽高误差以1.5pt作本地起点。不同角色、跨行图、不同纵横比不盲目同组。目检文字/箭头/图例/色条碰撞、遮线、编号、页边。
 **文件层**：PDF物理尺寸、字/字体、栅格有效dpi、页数，SVG可编辑，PNG清晰；不可只改dpi属性。自动检查不能证明科学正确或零遮挡。
 
+字体验收同时看导出PDF里的实际字族与最终尺寸画面：正文常规体、编号粗体，变量斜体、单位正体，μ/π/负号/下标无错位；完整图注放在稿件中。报告字体替代，不能把配置里的Arial当成已正确渲染的证据。
+
 ```bash
 python scripts/audit_pdf.py figure.pdf --min-font-pt 6 --min-image-dpi 300 --width-mm 178 --json-out figure.audit.json
 ```
